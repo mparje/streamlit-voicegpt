@@ -20,7 +20,7 @@ if st.button("Submit", type="primary"):
     report = []
     # Send user input to OpenAI model
     for resp in openai.ChatCompletion.create(
-        model='gpt-3.5-turbo',
+        model='gpt-4',
         messages=[
             {'role': 'user', 'content': user_input}
         ],
