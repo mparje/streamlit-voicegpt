@@ -1,10 +1,10 @@
 # Import required libraries
-import config
+import OS
 import streamlit as st
 import openai
 
 # Set up OpenAI API key
-openai.api_key = config.OPENAI_API_KEY
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Set up Streamlit interface
 st.subheader("AI Assistant : Streamlit + OpenAI: `stream` *argument*")
